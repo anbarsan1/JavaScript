@@ -1,0 +1,37 @@
+<html>
+<body>
+<button onclick="myFunction()">Array Polidorme</button>
+<p id="demo"></p>
+<p id="out"></p>
+<script>
+var fruits = ["malayalam", "tree", "boat", "civic", "melt", "level"];
+var outfr=[];
+document.getElementById("demo").innerHTML = fruits;
+var revStr = "";
+var valBoolean;
+
+function myFunction() {
+ for (var i = 0; i < fruits.length; i++) {
+    
+	polidorme(fruits[i]);
+
+}	 
+}
+function polidorme(Str1){
+
+var revStr = "";
+var valBoolean;
+
+var str = Str1;
+var k = str.length;
+for(var j=k; j>=0; j--) {
+revStr = revStr+str.charAt(j);
+}
+if(str == revStr) {
+outfr.push(str);
+document.getElementById("out").innerHTML = outfr;
+} 
+}   
+</script>
+</body>
+</html>

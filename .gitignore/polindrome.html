@@ -1,0 +1,27 @@
+<html>
+<body>
+<script type="text/javascript">
+function checkPalindrome() {
+var revStr = "";
+var valBoolean;
+var str = document.getElementById("str").value;
+var i = str.length;
+for(var j=i; j>=0; j--) {
+revStr = revStr+str.charAt(j);
+}
+if(str == revStr) {
+valBoolean=true;
+alert(str+"-->"+valBoolean);
+} else {
+valBoolean=false;
+alert(str+"-->"+valBoolean);
+
+}
+}
+</script>
+<form >
+Enter String: <input type="text" id="str" name="string" /><br />
+<input type="submit" value="Check" onclick="checkPalindrome();"/>
+</form>
+</body>
+</html>
